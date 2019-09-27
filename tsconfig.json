@@ -1,0 +1,49 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@ran-ng/blogging-admin/dev": [
+        "projects/blogging-admin/src/public-api"
+      ],
+      "@ran-ng/blogging-admin/dev/*": [
+        "projects/blogging-admin/*"
+      ],
+      "@ran-ng/mp/dev": [
+        "projects/mp/src/public-api"
+      ],
+      "@ran-ng/mp/dev/*": [
+        "projects/mp/*"
+      ],
+      "blogging-admin": [
+        "dist/blogging-admin"
+      ],
+      "blogging-admin/*": [
+        "dist/blogging-admin/*"
+      ],
+      "mp": [
+        "dist/mp"
+      ],
+      "mp/*": [
+        "dist/mp/*"
+      ]
+    }
+  }
+}
