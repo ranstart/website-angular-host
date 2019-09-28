@@ -5,8 +5,8 @@ import { TENANT_MANAGEMENT_ROUTES } from '@abp/ng.tenant-management';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ASSETS_ROUTES } from '@ran-ng/assets';
-import { BLOGGING_ADMIN_ROUTES } from '@ran-ng/blogging-admin/dev';
-import { BLOGGING_MP_ROUTES } from '@ran-ng/mp/dev';
+import { BLOGGING_ADMIN_ROUTES } from '@ran-ng/blogging-admin';
+import { BLOGGING_MP_ROUTES } from '@ran-ng/mp';
 import { SITE_ROUTES } from '@ran-ng/site';
 
 

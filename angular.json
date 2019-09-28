@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myProjectName": {
+    "blogging": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myProjectName",
+            "outputPath": "dist/blogging",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,22 +76,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "myProjectName:build"
+            "browserTarget": "blogging:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "myProjectName:build:production"
+              "browserTarget": "blogging:build:production"
             },
             "hmr": {
               "hmr": true,
-              "browserTarget": "myProjectName:build:hmr"
+              "browserTarget": "blogging:build:hmr"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myProjectName:build"
+            "browserTarget": "blogging:build"
           }
         },
         "test": {
@@ -134,86 +134,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "myProjectName:serve"
+            "devServerTarget": "blogging:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "myProjectName:serve:production"
+              "devServerTarget": "blogging:serve:production"
             }
-          }
-        }
-      }
-    },
-    "bloggingAdmin": {
-      "projectType": "library",
-      "root": "projects/blogging-admin",
-      "sourceRoot": "projects/blogging-admin/src",
-      "prefix": "ran",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/blogging-admin/tsconfig.lib.json",
-            "project": "projects/blogging-admin/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/blogging-admin/src/test.ts",
-            "tsConfig": "projects/blogging-admin/tsconfig.spec.json",
-            "karmaConfig": "projects/blogging-admin/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/blogging-admin/tsconfig.lib.json",
-              "projects/blogging-admin/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "mp": {
-      "projectType": "library",
-      "root": "projects/mp",
-      "sourceRoot": "projects/mp/src",
-      "prefix": "ran",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/mp/tsconfig.lib.json",
-            "project": "projects/mp/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/mp/src/test.ts",
-            "tsConfig": "projects/mp/tsconfig.spec.json",
-            "karmaConfig": "projects/mp/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/mp/tsconfig.lib.json",
-              "projects/mp/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
     }
   },
-  "defaultProject": "myProjectName"
+  "defaultProject": "blogging"
 }
