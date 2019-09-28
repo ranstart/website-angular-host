@@ -11,23 +11,27 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { SiteModule } from '@ran-ng/site';
+import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    NgxsModule.forRoot([]),
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    SiteModule.forRoot(),
+    BloggingAdminFieldProviderModule,
     ThemeSharedModule.forRoot(),
     CoreModule.forRoot({
       environment,
       requirements: {
-        layouts: RAN_LAYOUTS,
+        layouts: RAN_LAYOUTS
       },
     }),
     OAuthModule.forRoot(),
-    NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
   ],
   providers: [],
