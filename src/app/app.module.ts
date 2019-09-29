@@ -17,7 +17,6 @@ import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    NgxsModule.forRoot([]),
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -32,6 +31,7 @@ import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
       },
     }),
     OAuthModule.forRoot(),
+    NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot({ disabled: environment.production }),
   ],
   providers: [],
