@@ -2,11 +2,11 @@ export const environment = {
   production: true,
   hmr: false,
   application: {
-    name: 'Blogging',
+    name: '扉旅汽车',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44369',
+    issuer: window.location.origin,
     clientId: 'Blogging_App',
     dummyClientSecret: '1q2w3e*',
     scope: 'Blogging',
@@ -16,7 +16,7 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'https://localhost:44369',
+      url: window.location.origin
     },
   },
   localization: {
