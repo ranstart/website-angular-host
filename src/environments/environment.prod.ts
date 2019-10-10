@@ -2,11 +2,11 @@ export const environment = {
   production: true,
   hmr: false,
   application: {
-    name: '扉旅汽车',
+    name: '深圳天闻',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'http://feelauto.com.cn',
+    issuer: 'http://shenzhentianwen.com',
     clientId: 'Site_App',
     dummyClientSecret: '1q2w3e*',
     scope: 'Site',
@@ -16,7 +16,7 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'http://feelauto.com.cn'
+      url: 'http://shenzhentianwen.com'
     },
   },
   localization: {
