@@ -6,20 +6,20 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: window.location.origin,
-    clientId: 'Blogging_App',
+    issuer: 'http://feelauto.com.cn',
+    clientId: 'Site_App',
     dummyClientSecret: '1q2w3e*',
-    scope: 'Blogging',
+    scope: 'Site',
     showDebugInformation: true,
     oidc: false,
-    requireHttps: true,
+    requireHttps: false,
   },
   apis: {
     default: {
-      url: window.location.origin
+      url: 'http://feelauto.com.cn'
     },
   },
   localization: {
-    defaultResourceName: 'Blogging',
+    defaultResourceName: 'Site',
   },
 };

@@ -6,17 +6,17 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer:  window.location.origin,
+    issuer: 'https://localhost:44369',
     clientId: 'Blogging_App',
     dummyClientSecret: '1q2w3e*',
     scope: 'Blogging',
     showDebugInformation: true,
     oidc: false,
-    requireHttps: false,
+    requireHttps: true,
   },
   apis: {
     default: {
-      url:  window.location.origin,
+      url: 'https://localhost:44369',
     },
   },
   localization: {
