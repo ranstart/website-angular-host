@@ -5,14 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsModule } from '@ngxs/store';
+import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
+import { CoreModule as RanCoreModule } from '@ran-ng/core';
+import { SiteModule } from '@ran-ng/site';
 import { RAN_LAYOUTS } from '@ran-ng/theme-basic';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { SiteModule } from '@ran-ng/site';
-import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { BloggingAdminFieldProviderModule } from '@ran-ng/blogging-admin';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    RanCoreModule.forRoot(),
     SiteModule.forRoot(),
     BloggingAdminFieldProviderModule,
     ThemeSharedModule.forRoot(),

@@ -2,11 +2,11 @@ export const environment = {
   production: true,
   hmr: false,
   application: {
-    name: '扉旅汽车',
+    name: '管理',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'http://feelauto.com.cn',
+    issuer: 'http://{TENANCY_NAME}',
     clientId: 'Site_App',
     dummyClientSecret: '1q2w3e*',
     scope: 'Site',
@@ -16,10 +16,10 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'http://feelauto.com.cn'
+      url: 'http://{TENANCY_NAME}'
     },
   },
   localization: {
-    defaultResourceName: 'Site',
+    defaultResourceName: 'Blogging',
   },
 };

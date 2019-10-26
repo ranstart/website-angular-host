@@ -2,7 +2,7 @@ export const environment = {
   production: false,
   hmr: false,
   application: {
-    name: '扉旅汽车',
+    name: '管理',
     logoUrl: '',
   },
   oAuthConfig: {
