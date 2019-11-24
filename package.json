@@ -33,7 +33,7 @@
     "@ran-ng/ckeditor": "^0.8.0",
     "@ran-ng/core": "^0.8.0",
     "@ran-ng/mp": "^0.8.0",
-    "@ran-ng/site": "^0.8.1",
+    "@ran-ng/site": "^0.8.2",
     "@ran-ng/spinner": "0.0.1",
     "@ran-ng/theme-basic": "^0.8.12",
     "hammerjs": "^2.0.8",
