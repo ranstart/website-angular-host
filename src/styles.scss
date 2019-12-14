@@ -121,6 +121,9 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body .ui-toast .ui-toast-message.ui-toast-message-warn {
-  background-color: #ffffff!important;
+.abp-confirm .ui-toast-message-content {
+  background-color: #fff !important;
+}
+.abp-confirm .abp-confirm-footer {
+  background-color: #f4f4f7 !important;
 }

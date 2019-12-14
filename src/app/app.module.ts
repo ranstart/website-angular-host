@@ -32,6 +32,7 @@ const LOGGERS = [NgxsLoggerPluginModule.forRoot({ disabled: true })];
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    ThemeBasicModule.forRoot({ theme: 'light' }),
 
     RanCoreModule.forRoot(),
     SiteModule.forRoot(),
