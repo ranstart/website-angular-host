@@ -2,21 +2,21 @@ export const environment = {
   production: false,
   hmr: false,
   application: {
-    name: '管理',
+    name: '青橙汽车自媒体平台',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44369',
-    clientId: 'Blogging_App',
+    issuer: 'https://localhost:44385',
+    clientId: 'Publish_App',
     dummyClientSecret: '1q2w3e*',
-    scope: 'Blogging',
+    scope: 'Publish',
     showDebugInformation: true,
     oidc: false,
     requireHttps: true,
   },
   apis: {
     default: {
-      url: 'https://localhost:44369',
+      url: 'https://localhost:44385',
     },
   },
   localization: {

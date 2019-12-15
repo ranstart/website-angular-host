@@ -1,22 +1,22 @@
 export const environment = {
-  production: true,
+  production: false,
   hmr: false,
   application: {
-    name: '管理',
+    name: '青橙汽车自媒体平台',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'http://{TENANCY_NAME}',
-    clientId: 'Site_App',
+    issuer: '//host.limeauto.com.cn',
+    clientId: 'Publish_App',
     dummyClientSecret: '1q2w3e*',
-    scope: 'Site',
+    scope: 'Publish',
     showDebugInformation: true,
     oidc: false,
-    requireHttps: false,
+    requireHttps: true,
   },
   apis: {
     default: {
-      url: 'http://{TENANCY_NAME}'
+      url: '//host.limeauto.com.cn',
     },
   },
   localization: {

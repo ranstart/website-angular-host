@@ -16,7 +16,7 @@ import { CoreModule as RanCoreModule } from '@ran-ng/core';
 import { MpConfigModule } from '@ran-ng/mp-config';
 import { SiteModule } from '@ran-ng/site';
 import { SiteConfigModule } from '@ran-ng/site-config';
-import { RAN_LAYOUTS } from '@ran-ng/theme-basic';
+import { RAN_LAYOUTS, ThemeBasicModule } from '@ran-ng/theme-basic';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
