@@ -6,17 +6,17 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: '//host.limeauto.com.cn',
+    issuer: 'http://host.limeauto.com.cn',
     clientId: 'Publish_App',
     dummyClientSecret: '1q2w3e*',
     scope: 'Publish',
     showDebugInformation: true,
     oidc: false,
-    requireHttps: true,
+    requireHttps: false,
   },
   apis: {
     default: {
-      url: '//host.limeauto.com.cn',
+      url: 'http://host.limeauto.com.cn',
     },
   },
   localization: {
